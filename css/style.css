@@ -137,8 +137,16 @@ a:hover {
 .little-guy {
   width: 30px;
   position: absolute;
-  right: 30px;
+  right: 50%;
   opacity: 0;
+}
+
+.little-guy:hover {
+  opacity: 1;
+}
+
+.little-guy-wrapper {
+  opacity: 1 !important;
 }
 
 @media (max-width: 991px) {
