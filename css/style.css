@@ -5,12 +5,14 @@
 
 body {
   font-family: 'proxima-nova', sans-serif;
+  position: relative;
 }
 
 .navbar {
   background-color: #fff;
-  margin-bottom: 100px;
-  padding: .75em 1em !important;
+  padding: 0 !important;
+  border-bottom: 1px solid #e5e5e5;
+  height: 80px;
 }
 
 .nav-link {
@@ -24,7 +26,7 @@ body {
 }
 
 .navbar-brand {
-  width: 60px;
+  width: 100px;
 }
 
 .mobile {
@@ -43,12 +45,19 @@ body {
   padding-right: 25px !important;
 }
 
+#about {
+  margin-top: 150px;
+}
+
 .title {
   font-size: 26px;
   margin-top: 0;
-  margin-bottom: 55px;
   font-family: serif;
   font-family: 'Cormorant Garamond', serif;
+}
+
+hr {
+  margin-bottom: 55px;
 }
 
 .sub-title {
@@ -66,8 +75,8 @@ p {
   font-size: 15px;
 }
 
-.m-80 {
-  margin-bottom: 80px;
+.m-40 {
+  margin-bottom: 40px;
 }
 
 .m-55 {
@@ -130,7 +139,7 @@ a:hover {
   width: 60px;
   position: absolute;
   right: 0;
-  top: 12px;
+  top: 0;
   margin-right: -17px;
 }
 
