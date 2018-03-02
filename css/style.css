@@ -11,18 +11,24 @@ body {
 .navbar {
   background-color: #fff;
   padding: 0 !important;
-  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid #e5e5e5; */
   height: 80px;
 }
 
 .nav-link {
   font-size: 15px;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin: 0 30px;
+}
+
+.active {
+  border-bottom: 1px solid #000;
 }
 
 .nav-item:last-child a {
   padding-right: 0 !important;
+  margin-right: 0;
 }
 
 .navbar-brand {
@@ -34,6 +40,76 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.mobile .nav-link {
+  margin: 0;
+  margin-top: -25px !important;
+}
+
+.mobile.navbar-nav {
+  flex-direction: unset !important;
+  margin-top: 25px !important;
+}
+
+@media (max-width: 991px) {
+  .mobile .nav-link {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 15px !important;
+  }
+
+  .mobile .nav-item:last-child .nav-link {
+    margin-right: 15px !important;
+  }
+
+  .mobile .nav-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 462px) {
+  .mobile .nav-item:first-child .nav-link {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 432px) {
+  .mobile.navbar-nav {
+    margin-top: 0 !important;
+  }
+
+  .navbar .container {
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar-brand {
+    margin-top: -8px;
+  }
+
+  .mobile {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .mobile li {
+    float: left;
+  }
+
+  .mobile .nav-item:last-child .nav-link {
+    margin-right: 0px !important;
+  }
 }
 
 .desktop {
@@ -54,9 +130,6 @@ body {
   margin-top: 0;
   font-family: serif;
   font-family: 'Cormorant Garamond', serif;
-}
-
-hr {
   margin-bottom: 55px;
 }
 
@@ -75,8 +148,8 @@ p {
   font-size: 15px;
 }
 
-.m-40 {
-  margin-bottom: 40px;
+.m-80 {
+  margin-bottom: 80px;
 }
 
 .m-55 {
@@ -197,5 +270,9 @@ a:hover {
   .navbar-expand-lg > .container {
     padding-right: 10px !important;
     padding-left: 10px !important;
+  }
+
+  #about {
+    margin-top: 125px;
   }
 }

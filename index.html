@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <!-- <link rel="shortcut icon" href="/images/favicon.ico" /> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='og:image' content='images/social.jpg'>
     <title>We Are Aetha.</title>
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset=75>
-    <div class="container fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-        <img class="navbar-brand" src="images/type.svg" />
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="images/type.svg" /></a>
         <ul class="navbar-nav ml-auto desktop">
           <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -27,9 +28,9 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <ul class="mobile">
+        <ul class="navbar-nav ml-auto mobile">
           <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -38,13 +39,13 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
     <div class="container">
-      <div id="about" class="section m-40">
+      <div id="about" class="section m-80">
         <h3 class="title">About</h3>
-        <hr />
+        <!-- <hr /> -->
         <div class="row">
           <div class="col-md-6">
             <h5 class="sub-title">Our Mission.</h5>
@@ -57,11 +58,11 @@
         </div>
       </div>
 
-      <div class="bg-image bg1 m-40"></div>
+      <div class="bg-image bg1 m-80"></div>
 
-      <div id="services" class="section m-40">
+      <div id="services" class="section m-80">
         <h3 class="title">Services</h3>
-        <hr />
+        <!-- <hr /> -->
         <div class="row m-55">
           <div class="col-md-4">
             <h5 class="sub-title">Creative Direction & Design.</h5>
@@ -87,18 +88,18 @@
           </div>
           <div class="col-md-4 last">
             <h5 class="sub-title">Film & Animation.</h5>
-            <p>Script Development, Production, Post Production, Motion Graphics, Commercials, Music Videos.</p>
+            <p>Script Development, Production, P ost Production, Motion Graphics, Commercials, Music Videos.</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-image bg2 m-40"></div>
+      <div class="bg-image bg2 m-80"></div>
 
-      <div id="contact" class="m-40 section">
+      <div id="contact" class="m-80 section">
         <img class="logo-icon" src="images/logo.svg" />
         <a class="little-guy-wrapper" href="https://i.imgur.com/VsQArrU.gif" target="_blank"><img class="little-guy" src="images/guy.png" /></a>
         <h1 class="title">Contact</h1>
-        <hr />
+        <!-- <hr /> -->
         <ul class="social-links">
           <li class="email"><a href="mailto:info@weareaetha.com">info@weareaetha.com</a></li>
           <li><a href="https://www.facebook.com/weareaetha" target="_blank">Facebook</a></li>
@@ -107,5 +108,6 @@
         </ul>
       </div>
     </div>
+
   </body>
 </html>
